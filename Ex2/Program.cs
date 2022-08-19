@@ -8,7 +8,9 @@ if (a > b) {
     Console.Write("Меньшее число - ");
     Console.WriteLine(b);
 }
-else {
+else if (a == b) {
+    Console.Write("Числа равны");
+} else {
     Console.Write("Большее число - ");
     Console.WriteLine(b);
     Console.Write("Меньшее число - ");
