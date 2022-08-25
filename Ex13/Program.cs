@@ -1,4 +1,4 @@
-﻿int thirdNumber(int number)
+﻿int FindThirdNumber(int number)
 {
     int numberNext = number;
     int number3 = numberNext;
@@ -21,7 +21,7 @@
 Console.WriteLine("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int result = thirdNumber(number);
+int result = FindThirdNumber(number);
 
 if (result == -1)
 {
