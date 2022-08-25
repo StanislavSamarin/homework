@@ -2,6 +2,7 @@
 {
     int numberNext = number;
     int number3 = numberNext;
+    int error = -1;
     if (number / 100 > 0)
     {
         while (numberNext / 100 > 0)
@@ -13,7 +14,6 @@
     }
     else
     {
-        int error = -1;
         return error;
     }
 }
