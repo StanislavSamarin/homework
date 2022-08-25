@@ -1,4 +1,4 @@
-﻿int middleNumber(int number)
+﻿int FindMiddle(int number)
 {
     if (number / 1000 == 0 && number / 100 > 0)
     {
@@ -15,7 +15,7 @@
 Console.WriteLine("Введите трёхзначное число:");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int result = middleNumber(number);
+int result = FindMiddle(number);
 
 if (result == -1)
 {
