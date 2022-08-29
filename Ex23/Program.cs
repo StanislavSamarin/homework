@@ -17,12 +17,23 @@ if (N < 0)
     return;
 }
 
-void GetCube(int N)
+int[] GetCube(int N)
 {
+    int[] arr = new int[N];
     for (int i = 0; i < N; i++)
     {
-    Console.WriteLine(Math.Pow((i + 1), 3));
+        arr[i] = (int)Math.Pow((i + 1), 3);
+    }
+    return arr;
+}
+
+void PrintGetCube()
+{
+    int[] arr = GetCube(N);
+    for (int i = 0; i < N; i++)
+    {
+        Console.Write($"{arr[i]} ");
     }
 }
 
-GetCube(N);
+PrintGetCube();
