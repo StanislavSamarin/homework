@@ -27,13 +27,14 @@ int[] GetCube(int N)
     return arr;
 }
 
-void PrintGetCube()
+
+int[] arr = GetCube(N);
+void PrintGetCube(int[] arr)
 {
-    int[] arr = GetCube(N);
     for (int i = 0; i < N; i++)
     {
         Console.Write($"{arr[i]} ");
     }
 }
 
-PrintGetCube();
+PrintGetCube(arr);
