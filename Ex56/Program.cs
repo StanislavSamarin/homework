@@ -42,7 +42,7 @@ void Print2DArray(int[,] array)
 
 Console.WriteLine();
 
-void GetMinRow(int[,] array)
+int GetMinRow(int[,] array)
 {
     int[] arrayRow = new int[array.GetLength(0)];
     for (int i = 0; i < array.GetLength(0); i++)
@@ -63,8 +63,9 @@ void GetMinRow(int[,] array)
             min = arrayRow[k];
         }
     }
-    Console.WriteLine();
-    Console.WriteLine($"Строка с наименьшей суммой элементов: {indexMinRow} строка");
+    return indexMinRow;
 }
 
-GetMinRow(array);
+int indexMinRow = GetMinRow(array);
+Console.WriteLine();
+Console.WriteLine($"Строка с наименьшей суммой элементов: {indexMinRow} строка");
