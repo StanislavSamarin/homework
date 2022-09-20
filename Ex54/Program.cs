@@ -12,7 +12,7 @@ int[,] array = CreateRandomArray(4, 4);
 
 Print2DArray(array);
 
-int[,] arrayNew = FillArrayNew(array);
+int[,] arrayNew = SortArrayNew(array);
 
 Console.WriteLine();
 
@@ -45,7 +45,7 @@ void Print2DArray(int[,] array)
 }
 
 
-int[,] FillArrayNew(int[,] array)
+int[,] SortArrayNew(int[,] array)
 {
     int tmp;
     for (int i = 0; i < array.GetLength(0); i++)
