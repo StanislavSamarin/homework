@@ -23,14 +23,14 @@ if (isNumberM != true)
     return;
 }
 
-void GetNumbers(int m, int n, int i = 0)
+void GetNumbers(int m, int n)
 {
     if (m > n)
     {
         return;
     }
     Console.WriteLine(m);
-    GetNumbers(++m, n, ++i);
+    GetNumbers(++m, n);
 }
 
 GetNumbers(m, n);
