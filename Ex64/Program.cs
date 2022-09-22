@@ -3,4 +3,34 @@
 
 // M = 1; N = 5. -> ""1, 2, 3, 4, 5""
 
-// M = 4; N = 8. -> ""4, 6, 7, 8""
+// M = 4; N = 8. -> ""4, 5, 6, 7, 8""
+
+Console.WriteLine("Введите число m: ");
+bool isNumberM = int.TryParse(Console.ReadLine(), out int m);
+
+if (isNumberM != true)
+{
+    Console.WriteLine("Ошибка! Вы ввели не число!");
+    return;
+}
+
+Console.WriteLine("Введите число n: ");
+bool isNumberN = int.TryParse(Console.ReadLine(), out int n);
+
+if (isNumberM != true)
+{
+    Console.WriteLine("Ошибка! Вы ввели не число!");
+    return;
+}
+
+void GetNumbers(int m, int n, int i = 0)
+{
+    if (m > n)
+    {
+        return;
+    }
+    Console.WriteLine(m);
+    GetNumbers(++m, n, ++i);
+}
+
+GetNumbers(m, n);
